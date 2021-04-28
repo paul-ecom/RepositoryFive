@@ -1,0 +1,79 @@
+<script>
+
+    class Säugetier {
+   
+        /*Zählen Sie hier ihre Attribute auf:
+        attribut1;
+        attribut2;
+        ...*/
+        Herkunft;
+        Lebensraum;
+        Größe;
+    }
+//Shortcut um alles Markierte gleichzeitig zu ändern --> Fn + F2 !!!
+
+  
+class Hund extends Säugetier {
+    Rasse;
+    Fellfarbe;
+    Charakter;
+
+druckeHund() {
+    console.log("Hier die Daten zum Hund: ");
+    console.log("Herkunft: " + this.Herkunft);
+    console.log("Lebensraum: " + this.Lebensraum);
+    console.log("Größe: " + this.Größe);
+    console.log("Rasse: " + this.Rasse);
+    console.log("Fellfarbe: " + this.Fellfarbe);
+    console.log("Charakter: " + this.Charakter);
+    }
+}
+
+
+   
+class Pferd extends Säugetier {
+        Blüter;
+        Geschwindigkeit;
+    
+
+druckePferd() {
+        console.log("Hier die Daten zum Pferd: ");
+        console.log("Herkunft: " + this.Herkunft);
+        console.log("Lebensraum: " + this.Lebensraum);
+        console.log("Größe: " + this.Größe);
+        console.log("Blüter: " + this.Blüter);
+        console.log("Geschwindigkeit: " + this.Geschwindigkeit);
+    }
+}
+ 
+
+
+
+var Bernhardiner = new Hund ();
+
+    Bernhardiner.Herkunft = "Afrika";
+    Bernhardiner.Lebensraum = "Land";
+    Bernhardiner.Größe = "55cm";
+    Bernhardiner.Rasse = "Bernhardiener";
+    Bernhardiner.Fellfarbe = "Hellbraun, weiß";
+    Bernhardiner.Charakter = "lieb, ruhig";
+
+    Bernhardiner.druckeHund();
+
+
+
+
+
+
+var Pferdinand = new Pferd ();
+
+    Pferdinand.Herkunft = "Europa";
+    Pferdinand.Lebensraum = "Land";
+    Pferdinand.Größe = "200cm";
+    Pferdinand.Blüter = "Vollblut";
+    Pferdinand.Geschwindigkeit = "40km/h";
+
+    Pferdinand.druckePferd(); 
+    
+    
+</script>

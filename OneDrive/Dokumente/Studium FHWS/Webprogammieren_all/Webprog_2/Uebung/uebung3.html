@@ -1,0 +1,72 @@
+<script>
+
+        class Tier {
+            sinnloserCounter;
+            /*Zählen Sie hier ihre Attribute auf:
+            attribut1;
+            attribut2;
+            ...*/
+            Herkunft;
+            Lebensraum;
+            Art;
+            Nahrung;
+
+            /*Hier kommen die Methoden hin*/
+            druckeZusammenfassung() {
+                console.log('Mein Tier hat folgende Infos:');
+                console.log("Counter " + this.sinnloserCounter);
+                console.log("Herkunft: " + this.Herkunft);
+                console.log("Lebensraum: " + this.Lebensraum);
+                console.log("Art: " + this.Art);
+                console.log("Nahrung: " + this.Nahrung);
+                /*Geben Sie hier mit console.log nach und nach ihre Attribute aus:
+                Beispiel: console.log('Attribut: ' + this.attribut1)
+                */
+
+            }
+
+            erhoeheCounter() {
+                /*Schreiben Sie hier eine Methode, die den sinnlosen Counter um eins (++) hochzählt.*/
+                this.sinnloserCounter++;
+            }
+        }
+
+        /*Jetzt erstellen Sie eine Instanz Ihrer Klasse
+        var beispiel = new Beispiel();*/
+        var meinHund = new Tier();
+
+        meinHund.sinnloserCounter = 0;
+        meinHund.Herkunft = "Afrika";
+        meinHund.Lebensraum = "Land";
+        meinHund.Art = "Säugetier";
+        meinHund.Nahrung = "Fleischfresser";
+
+        meinHund.erhoeheCounter();
+
+        meinHund.druckeZusammenfassung();
+
+    
+
+        /*Hier belegen wir die Attribut*/
+        /*Klassenname.*///sinnloserCounter = 0;
+        /*Belegen Sie Ihre restlichen Attribute*/
+
+        /*Jetzt rufen wir mal unsere Methoden auf.
+        Rufen Sie zuerst die erhoeheCounter-Methode auf, dann die druckeZusammenfassung-Methode.
+        Beispiel: beispiel.erhoeheCounter()*/
+
+        /*Erstellen Sie eine zweite Instanz Ihrer Klasse*/
+
+        var meinPferd = new Tier();
+
+        meinPferd.sinnloserCounter = 1;
+        meinPferd.Herkunft = "Europa";
+        meinPferd.Lebensraum = "Land";
+        meinPferd.Art = "Säugetier";
+        meinPferd.Nahrung = "Pflanzenfresser";
+
+        meinPferd.erhoeheCounter();
+        
+        meinPferd.druckeZusammenfassung();
+
+</script>
